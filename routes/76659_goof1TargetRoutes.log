@@ -1,0 +1,51 @@
+
+Testing /Users/josana/Documents/GitRepos/Repos/snyk-goof-Josana/routes ...
+
+ ✗ [Medium] Allocation of Resources Without Limits or Throttling
+   ID: e3e4ff8b-9fe4-4ac2-8383-b4cedc4c166b 
+   Path: index.js, line 77 
+   Info: This endpoint handler performs a system command execution and does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [Medium] Allocation of Resources Without Limits or Throttling
+   ID: 3a8b2dd6-a224-4b6e-8a81-7968cc7fa4f8 
+   Path: index.js, line 167 
+   Info: This endpoint handler performs a file system operation and does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [Medium] Allocation of Resources Without Limits or Throttling
+   ID: 51c645b9-1b40-49c2-a6f3-d8f1a5c98284 
+   Path: index.js, line 223 
+   Info: This endpoint handler performs a file system operation and does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [High] NoSQL Injection
+   ID: d2238e1d-f059-4f82-99d4-334d25de10a5 
+   Path: index.js, line 39 
+   Info: Unsanitized input from the HTTP request body flows into find, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+
+ ✗ [High] NoSQL Injection
+   ID: 412c24e3-e639-4f1b-9db2-25b179d010a0 
+   Path: index.js, line 116 
+   Info: Unsanitized input from an HTTP parameter flows into findById, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+
+ ✗ [High] NoSQL Injection
+   ID: e9bf3a96-e2a3-48d0-981f-7d2d0ea40ad7 
+   Path: index.js, line 145 
+   Info: Unsanitized input from an HTTP parameter flows into findById, where it is used in an NoSQL query. This may result in an NoSQL Injection vulnerability.
+
+
+✔ Test completed
+
+Organization:      ba9f1871-dbd8-47d3-aaa8-914b34378f02
+Test type:         Static code analysis
+Project path:      /Users/josana/Documents/GitRepos/Repos/snyk-goof-Josana/routes
+
+Summary:
+
+  6 Code issues found
+  3 [High]   3 [Medium] 
+
+Code Report Complete
+
+Your test results are available at:
+https://app.snyk.io/org/snyk-code-goof/project/adf57261-66ec-422d-941c-cf42ac624eb1/history/218d5fd8-77b3-458d-bc1b-1c09d2eed6a1
+
+
