@@ -33,7 +33,7 @@ exports.index = function (req, res, next) {
     });
 };
 
-
+// add a comment for a pr check
 exports.admin = function (req, res, next) {
   console.log(req.body);
   User.find({ username: req.body.username, password: req.body.password }, function (err, users) {
